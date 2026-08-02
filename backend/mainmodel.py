@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typing import Optional
 
 
@@ -12,6 +12,6 @@ class ItemDescription(BaseModel):
     condition: str= Field(
         description="Assess the conditoin of the object and provide a suitable adjective based on its condition"
     )
-    color: Optional[str]= None | Field(
-        desccription="Prescribe a color for the object"
+    color: Optional[str]=  Field(default=None,
+        description="Prescribe a color for the object"
     )

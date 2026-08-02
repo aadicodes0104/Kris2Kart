@@ -20,13 +20,12 @@ try:
                     "mime_type":"image/jpeg"
                 },
             ],
-            response_format=[
+            response_format=
                 {
                     "type": "text",
                     "mime_type":"application/json",
                     "schema": ItemDescription.model_json_schema()
                 },
-            ],
 
             
         )     
