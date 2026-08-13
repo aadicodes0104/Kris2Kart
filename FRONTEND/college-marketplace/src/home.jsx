@@ -4,7 +4,7 @@ import items from "./items"
 import Card from "./Card"
 import { useNavigate } from "react-router-dom";
 
-function Home() {
+function home() {
 
   const navigate = useNavigate();
 
@@ -53,7 +53,7 @@ function Home() {
 )
 }
 
-export default Home
+export default home
 
 
 

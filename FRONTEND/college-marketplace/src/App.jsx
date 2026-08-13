@@ -2,7 +2,7 @@ import "./App.css";
 import SellItem from "./SellItem";
 import { Routes, Route } from "react-router-dom"
 
-import Home from "./Home"
+import home from "./home"
 import ItemDetail from "./ItemDetail"
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
 
       <Route
         path="/"
-        element={<Home />}
+        element={<home />}
       />
 
       <Route
