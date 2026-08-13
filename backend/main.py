@@ -68,8 +68,16 @@ import base64, mimetypes, shutil, os
 from bson import ObjectId
 from mongo import collection
 from imagescript import imgscript
-
+from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 os.makedirs("uploads", exist_ok=True)
 
