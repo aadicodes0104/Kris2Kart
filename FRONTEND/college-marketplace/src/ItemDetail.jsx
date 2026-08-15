@@ -23,9 +23,9 @@ function ItemDetail() {
 
         <div className="detail-image">
 
-            {item.image ? (
+            {item.image_path ? (
 
-                <img src={item.image} alt={item.name} />
+                <img src={item.image_path} alt={item.name} />
 
             ) : (
 
